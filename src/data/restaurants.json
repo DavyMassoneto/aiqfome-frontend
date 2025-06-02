@@ -1,0 +1,348 @@
+[
+  {
+    "id": 1,
+    "name": "Restaurante da Dona Maria",
+    "freight": 5,
+    "rating": 4.7,
+    "image": "/mocks/restaurante1.png",
+    "isOpen": true,
+    "slug": "restaurante-da-dona-maria",
+    "deliveryTime": "25-35 min",
+    "distance": 4.8,
+    "freeDeliveryThreshold": 30.00,
+    "closingTime": "22:00",
+    "minimumOrder": 10.00,
+    "menu": [
+      {
+        "category": "Pratos Principais",
+        "hasPromotion": true,
+        "items": [
+          {
+            "name": "Feijoada Completa",
+            "description": "Feijão preto, carne de porco, linguiça, acompanhado de arroz e couve",
+            "price": 35.00,
+            "promotionalPrice": 29.99,
+            "tags": []
+          },
+          {
+            "name": "Salada Caprese",
+            "description": "Tomate, muçarela de búfala, manjericão e azeite",
+            "price": 22.00,
+            "tags": ["vegetarian"]
+          }
+        ]
+      },
+      {
+        "category": "Sobremesas",
+        "hasPromotion": false,
+        "items": [
+          {
+            "name": "Pudim de Leite",
+            "description": "Pudim caseiro com calda de caramelo",
+            "price": 8.00,
+            "tags": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Pizzaria do João",
+    "freight": 3.5,
+    "rating": 4.5,
+    "image": "/mocks/restaurante2.png",
+    "isOpen": true,
+    "slug": "pizzaria-do-joao",
+    "deliveryTime": "20-30 min",
+    "distance": 3.5,
+    "freeDeliveryThreshold": 40.00,
+    "closingTime": "23:00",
+    "minimumOrder": 15.00,
+    "menu": [
+      {
+        "category": "Pizzas",
+        "hasPromotion": true,
+        "items": [
+          {
+            "name": "Margherita",
+            "description": "Molho de tomate, muçarela, manjericão",
+            "price": 45.00,
+            "promotionalPrice": 39.99,
+            "tags": ["vegetarian"]
+          },
+          {
+            "name": "Calabresa Picante",
+            "description": "Calabresa, cebola, pimenta",
+            "price": 42.00,
+            "tags": ["spicy"]
+          }
+        ]
+      },
+      {
+        "category": "Bebidas",
+        "hasPromotion": false,
+        "items": [
+          {
+            "name": "Refrigerante Lata",
+            "description": "Coca-Cola 350ml",
+            "price": 5.00,
+            "tags": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "name": "Açaí Tropical",
+    "freight": 0,
+    "rating": 4.9,
+    "image": "/mocks/restaurante1.png",
+    "isOpen": true,
+    "slug": "acai-tropical",
+    "deliveryTime": "15-25 min",
+    "distance": 2.5,
+    "freeDeliveryThreshold": 20.00,
+    "closingTime": "21:00",
+    "minimumOrder": 10.00,
+    "menu": [
+      {
+        "category": "Açaí",
+        "hasPromotion": true,
+        "items": [
+          {
+            "name": "Açaí 500ml",
+            "description": "Açaí com granola e banana",
+            "price": 18.00,
+            "promotionalPrice": 15.99,
+            "tags": ["vegetarian"]
+          },
+          {
+            "name": "Açaí Picante",
+            "description": "Açaí com pimenta e frutas tropicais",
+            "price": 20.00,
+            "tags": ["spicy"]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "name": "Sorveteria Gelato",
+    "freight": 0,
+    "rating": 4.6,
+    "image": "/mocks/restaurante2.png",
+    "isOpen": true,
+    "slug": "sorveteria-gelato",
+    "deliveryTime": "10-20 min",
+    "distance": 1.8,
+    "freeDeliveryThreshold": 25.00,
+    "closingTime": "20:30",
+    "minimumOrder": 12.00,
+    "menu": [
+      {
+        "category": "Sorvetes",
+        "hasPromotion": false,
+        "items": [
+          {
+            "name": "Gelato de Chocolate",
+            "description": "Sorvete artesanal de chocolate belga",
+            "price": 12.00,
+            "tags": []
+          },
+          {
+            "name": "Gelato de Limão",
+            "description": "Sorvete refrescante de limão siciliano",
+            "price": 12.00,
+            "tags": ["vegetarian"]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Hamburgueria Artesanal",
+    "freight": 4.2,
+    "rating": 4.8,
+    "image": "/mocks/restaurante3.png",
+    "isOpen": false,
+    "slug": "hamburgueria-artesanal",
+    "deliveryTime": "35-45 min",
+    "distance": 6.0,
+    "freeDeliveryThreshold": 50.00,
+    "closingTime": "22:30",
+    "minimumOrder": 20.00,
+    "menu": [
+      {
+        "category": "Hambúrgueres",
+        "hasPromotion": true,
+        "items": [
+          {
+            "name": "Burger Clássico",
+            "description": "Carne, queijo, alface, tomate, maionese",
+            "price": 28.00,
+            "promotionalPrice": 24.99,
+            "tags": []
+          },
+          {
+            "name": "Burger Vegetariano",
+            "description": "Hambúrguer de grão-de-bico, alface, tomate",
+            "price": 25.00,
+            "tags": ["vegetarian"]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Comida Japonesa Express",
+    "freight": 6,
+    "rating": 4.6,
+    "image": "/mocks/restaurante4.png",
+    "isOpen": true,
+    "slug": "comida-japonesa-express",
+    "deliveryTime": "40-50 min",
+    "distance": 7.5,
+    "freeDeliveryThreshold": 35.00,
+    "closingTime": "21:00",
+    "minimumOrder": 15.00,
+    "menu": [
+      {
+        "category": "Temakis",
+        "description": "sushi em forma de cone com salmão e cream cheese",
+        "hasPromotion": true,
+        "items": [
+          {
+            "name": "Califórnia",
+            "description": "Kani, pepino e maçã ou manga",
+            "price": 17.00,
+            "promotionalPrice": 13.99,
+            "tags": []
+          },
+          {
+            "name": "Califórnia",
+            "description": "Kani, pepino e maçã ou manga",
+            "price": 13.99,
+            "tags": ["vegetarian"]
+          },
+          {
+            "name": "Filadélfia",
+            "description": "Arroz, salmão fresco, cream cheese e cebolinha",
+            "price": 13.99,
+            "tags": []
+          },
+          {
+            "name": "Mix",
+            "description": "Escolha 3 ingredientes: shimeji, alface americana, rúcula, pepino, tomate seco, cream cheese, maionese, goiabada, banana, requeijão, molho de maracujá, manga, maçã e morango",
+            "price": 13.99,
+            "showPriceAsMinimum": true,
+            "tags": ["spicy"]
+          },
+          {
+            "name": "Salmão Picante",
+            "description": "Alga, arroz, salmão fresco, pimenta e cebolinha",
+            "price": 13.99,
+            "showPriceAsMinimum": true,
+            "tags": ["spicy"]
+          }
+        ]
+      },
+      {
+        "category": "Niguiris",
+        "hasPromotion": true,
+        "items": [
+          {
+            "name": "Niguiri de Salmão",
+            "description": "Salmão fresco sobre arroz",
+            "price": 10.00,
+            "promotionalPrice": 8.99,
+            "tags": []
+          }
+        ]
+      },
+      {
+        "category": "Ceviches",
+        "description": "um prato super refrescante de peixe fatiado e marinado com limão",
+        "hasPromotion": true,
+        "items": [
+          {
+            "name": "Ceviche Clássico",
+            "description": "Peixe fatiado e marinado com limão",
+            "price": 25.00,
+            "promotionalPrice": 22.00,
+            "tags": []
+          }
+        ]
+      },
+      {
+        "category": "Bebidas",
+        "hasPromotion": false,
+        "items": [
+          {
+            "name": "Suco Natural",
+            "description": "Suco de laranja 300ml",
+            "price": 7.00,
+            "tags": ["vegetarian"]
+          }
+        ]
+      },
+      {
+        "category": "Sobremesas",
+        "hasPromotion": false,
+        "items": [
+          {
+            "name": "Mochi",
+            "description": "Mochi recheado com sorvete",
+            "price": 9.00,
+            "tags": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "name": "Padaria Pão Dourado",
+    "freight": 0,
+    "rating": 4.3,
+    "image": "/mocks/restaurante3.png",
+    "isOpen": false,
+    "slug": "padaria-pao-dourado",
+    "deliveryTime": "20-30 min",
+    "distance": 3.0,
+    "freeDeliveryThreshold": 30.00,
+    "closingTime": "19:00",
+    "minimumOrder": 10.00,
+    "menu": [
+      {
+        "category": "Pães",
+        "hasPromotion": false,
+        "items": [
+          {
+            "name": "Pão Francês",
+            "description": "Pão francês fresco",
+            "price": 1.00,
+            "tags": ["vegetarian"]
+          }
+        ]
+      },
+      {
+        "category": "Doces",
+        "hasPromotion": true,
+        "items": [
+          {
+            "name": "Sonho",
+            "description": "Sonho recheado com creme",
+            "price": 5.00,
+            "promotionalPrice": 4.50,
+            "tags": []
+          }
+        ]
+      }
+    ]
+  }
+]
