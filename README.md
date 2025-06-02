@@ -1,36 +1,109 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# aiqfome-task
 
-## Getting Started
+desafio técnico para a vaga de desenvolvedor front-end (react e next.js) na l2l aiqfome.
 
-First, run the development server:
+## 📱 objetivo
+
+construir uma aplicação web com foco em experiência mobile utilizando react e next.js, aplicando server components e boas práticas de desenvolvimento front-end.
+
+## 🚀 funcionalidades
+
+* listagem de produtos por categoria (com título, imagem, preço e review)
+* adição de produtos ao ticket
+* visualização do ticket
+* persistência de dados localmente no navegador
+* interface responsiva com foco em mobile
+
+## 🛠️ tecnologias
+
+* [next.js 15](https://nextjs.org/)
+* [react](https://reactjs.org/)
+* [tailwind css](https://tailwindcss.com/)
+* server components
+* context api / hooks
+* react-query (com hidratação e cache)
+* localstorage
+
+## ▶️ como rodar
 
 ```bash
+# instale as dependências
+npm install
+
+# crie o arquivo .env.local com a url da api mock:
+API_URL=http://localhost:3000
+
+# rode o servidor de desenvolvimento
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+
+# acesse em
+http://localhost:3000
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 📁 estrutura do projeto
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```
+/public
+/src
+  /app
+    /api              # rotas de API
+    /restaurant
+      /[slug]         # rota dinâmica para restaurante específico
+    layout.tsx        # layout principal da aplicação
+    page.tsx          # página inicial (home)
+  /assets
+    /icons            # ícones e imagens
+  /data               # dados mock
+  /features
+    /restaurants
+      /components     # componentes específicos de restaurantes
+        /freight-display
+        /menu-item
+        /menu-section
+        /rating-display
+        /restaurant-card
+        /restaurant-categories
+        /restaurant-header
+        /restaurant-info
+        /restaurant-list
+        /restaurant-menu-list
+        /restaurant-section
+      /hooks          # hooks específicos de restaurantes
+  /lib
+    /react-query      # configuração do react-query
+    /utils            # utilitários gerais
+    api.ts            # cliente de API
+  /shared
+    /components       # componentes compartilhados
+      /accordion
+      /footer
+      /header
+      /input
+      /typography
+  /styles             # estilos globais
+  /types              # tipos TypeScript
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+* as rotas do next.js ficam em `/app` e apenas importam os componentes principais das features.
+* toda lógica e ui de domínio fica nas pastas dentro de `/features`.
+* o que for reutilizável entre features vai em `/shared`.
 
-## Learn More
+## 🌐 arquitetura e justificativa técnica
 
-To learn more about Next.js, take a look at the following resources:
+embora o desafio valorize o uso de server components, optei por utilizar `react-query` com suporte a `hydrate` e `dehydrate` para garantir uma melhor experiência em mobile:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+* os dados são pré-carregados no server usando server components;
+* são hidratados no client com cache automático e atualização leve;
+* isso reduz a carga de rede, melhora responsividade e oferece experiência mais fluida.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+essa decisão mantém o foco no front-end e organização do projeto, respeitando os princípios do desafio, mas com uma arquitetura mais próxima da realidade de produção.
 
-## Deploy on Vercel
+## 🎨 layout
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+layout de referência disponível no figma:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+[🔗 link para o figma](https://www.figma.com/design/mgLRWavLkkZnDTVKOKQPie/-aiqfome--teste-front-end---mobile?node-id=1182-2552&p=f)
+
+---
+
+projeto desenvolvido para o processo seletivo da l2l aiqfome.
